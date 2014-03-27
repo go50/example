@@ -1,4 +1,10 @@
 site :opscode
 
 cookbook 'apt'
+cookbook 'ruby'
+cookbook 'rake'
+#cookbook 'emacs'
+#cookbook 'tex'
+cookbook 'nkf', path:'site-cookbooks/nkf'
+cookbook 'emacs', path:'site-cookbooks/emacs'
 cookbook 'emboss', path:'site-cookbooks/emboss'

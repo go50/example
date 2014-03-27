@@ -120,6 +120,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.add_recipe "apt"
+    #chef.add_recipe "ruby"
+    #chef.add_recipe "rake"
+    #chef.add_recipe "tex"
+    chef.add_recipe "nkf"
+    chef.add_recipe "emacs"
     chef.add_recipe "emboss"
   end
 

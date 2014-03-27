@@ -3,6 +3,18 @@
     "apt": {
       "locked_version": "2.3.8"
     },
+    "ruby": {
+      "locked_version": "0.9.2"
+    },
+    "rake": {
+      "locked_version": "0.1.1"
+    },
+    "nkf": {
+      "path": "./site-cookbooks/nkf"
+    },
+    "emacs": {
+      "path": "./site-cookbooks/emacs"
+    },
     "emboss": {
       "path": "./site-cookbooks/emboss"
     }
