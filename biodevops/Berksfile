@@ -1,10 +1,19 @@
 site :opscode
 
 cookbook 'apt'
-cookbook 'ruby'
-cookbook 'rake'
-#cookbook 'emacs'
+#cookbook 'ruby'
+#cookbook 'rake'
 #cookbook 'tex'
-cookbook 'nkf', path:'site-cookbooks/nkf'
 cookbook 'emacs', path:'site-cookbooks/emacs'
+cookbook 'nkf', path:'site-cookbooks/nkf'
+cookbook 'jed', path:'site-cookbooks/jed'
+cookbook 'ess', path:'site-cookbooks/ess'
+cookbook 'git', path:'site-cookbooks/git'
+cookbook 'sqlite3', path:'site-cookbooks/sqlite3'
+cookbook 'libsqlite3-0', path:'site-cookbooks/libsqlite3-0'
+
+cookbook 'samtools', path:'site-cookbooks/samtools'
+cookbook 'r-base', path:'site-cookbooks/r-base'
+cookbook 'r-base-dev', path:'site-cookbooks/r-base-dev'
 cookbook 'emboss', path:'site-cookbooks/emboss'
+cookbook 'runit', path:'site-cookbooks/runit'

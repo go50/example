@@ -3,20 +3,41 @@
     "apt": {
       "locked_version": "2.3.8"
     },
-    "ruby": {
-      "locked_version": "0.9.2"
-    },
-    "rake": {
-      "locked_version": "0.1.1"
+    "emacs": {
+      "path": "./site-cookbooks/emacs"
     },
     "nkf": {
       "path": "./site-cookbooks/nkf"
     },
-    "emacs": {
-      "path": "./site-cookbooks/emacs"
+    "jed": {
+      "path": "./site-cookbooks/jed"
+    },
+    "ess": {
+      "path": "./site-cookbooks/ess"
+    },
+    "git": {
+      "path": "./site-cookbooks/git"
+    },
+    "sqlite3": {
+      "path": "./site-cookbooks/sqlite3"
+    },
+    "libsqlite3-0": {
+      "path": "./site-cookbooks/libsqlite3-0"
+    },
+    "samtools": {
+      "path": "./site-cookbooks/samtools"
+    },
+    "r-base": {
+      "path": "./site-cookbooks/r-base"
+    },
+    "r-base-dev": {
+      "path": "./site-cookbooks/r-base-dev"
     },
     "emboss": {
       "path": "./site-cookbooks/emboss"
+    },
+    "runit": {
+      "path": "./site-cookbooks/runit"
     }
   }
 }
