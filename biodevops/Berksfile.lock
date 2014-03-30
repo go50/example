@@ -3,6 +3,9 @@
     "apt": {
       "locked_version": "2.3.8"
     },
+    "python-software-properties": {
+      "path": "./site-cookbooks/python-software-properties"
+    },
     "emacs": {
       "path": "./site-cookbooks/emacs"
     },
@@ -24,8 +27,17 @@
     "libsqlite3-0": {
       "path": "./site-cookbooks/libsqlite3-0"
     },
+    "fastx-toolkit": {
+      "path": "./site-cookbooks/fastx-toolkit"
+    },
+    "bedtools": {
+      "path": "./site-cookbooks/bedtools"
+    },
     "samtools": {
       "path": "./site-cookbooks/samtools"
+    },
+    "cufflinks": {
+      "path": "./site-cookbooks/cufflinks"
     },
     "r-base": {
       "path": "./site-cookbooks/r-base"
@@ -33,11 +45,23 @@
     "r-base-dev": {
       "path": "./site-cookbooks/r-base-dev"
     },
-    "emboss": {
-      "path": "./site-cookbooks/emboss"
+    "r-bioc-biobase": {
+      "path": "./site-cookbooks/r-bioc-biobase"
     },
     "runit": {
       "path": "./site-cookbooks/runit"
+    },
+    "gbrowse": {
+      "path": "./site-cookbooks/gbrowse"
+    },
+    "galaxy": {
+      "path": "./site-cookbooks/galaxy"
+    },
+    "torque-server": {
+      "path": "./site-cookbooks/torque-server"
+    },
+    "emboss": {
+      "path": "./site-cookbooks/emboss"
     }
   }
 }

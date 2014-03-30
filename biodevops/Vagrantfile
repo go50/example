@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "debian6"
+  config.vm.box = "ubuntu-1204"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -58,7 +58,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
   # You will need to create the manifests directory and a manifest in
-  # the file debian6.pp in the manifests_path directory.
+  # the file ubuntu-1204.pp in the manifests_path directory.
   #
   # An example Puppet manifest to provision the message of the day:
   #
@@ -116,10 +116,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 
-  #config.berkshelf.enabled = true
-
   config.vm.provision :chef_solo do |chef|
     chef.add_recipe "apt"
+    chef.add_recipe "python-software-properties"
+    
     #chef.add_recipe "ruby"
     #chef.add_recipe "rake"
     #chef.add_recipe "tex"
@@ -130,11 +130,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "sqlite3"
     chef.add_recipe "libsqlite3-0"
 
+    chef.add_recipe "fastx-toolkit"
+    chef.add_recipe "bedtools"
     chef.add_recipe "samtools"
+
+    chef.add_recipe "cufflinks"
     chef.add_recipe "r-base"
     chef.add_recipe "r-base-dev"
-    chef.add_recipe "emboss"
+    chef.add_recipe "r-bioc-biobase"
+    #chef.add_recipe "r-bioc-cummerbund"
     chef.add_recipe "runit"
-  end
 
+    chef.add_recipe "gbrowse"
+    chef.add_recipe "galaxy"
+    chef.add_recipe "torque-server"
+    chef.add_recipe "emboss"
+  end
 end
