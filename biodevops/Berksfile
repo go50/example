@@ -3,9 +3,9 @@ site :opscode
 cookbook 'apt'
 cookbook 'python-software-properties', path:'site-cookbooks/python-software-properties'
 
-#cookbook 'ruby'
-#cookbook 'rake'
-#cookbook 'tex'
+cookbook 'ruby'
+cookbook 'rake'
+cookbook 'tex', path:'site-cookbooks/tex'
 cookbook 'emacs', path:'site-cookbooks/emacs'
 cookbook 'nkf', path:'site-cookbooks/nkf'
 cookbook 'jed', path:'site-cookbooks/jed'
