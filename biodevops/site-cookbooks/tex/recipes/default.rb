@@ -7,9 +7,9 @@
 # All rights reserved - Do Not Redistribute
 #
 
-execute "add-apt-repository" do
-  command "add-apt-repository -y ppa:texlive-backports/ppa"
-end
+#execute "add-apt-repository" do
+#  command "add-apt-repository ppa:texlive-backports/ppa -y"
+#end
 
 package 'texlive-binaries' do
   action :install

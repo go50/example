@@ -22,7 +22,7 @@ cookbook 'cufflinks', path:'site-cookbooks/cufflinks'
 cookbook 'r-base', path:'site-cookbooks/r-base'
 cookbook 'r-base-dev', path:'site-cookbooks/r-base-dev'
 cookbook 'r-bioc-biobase', path:'site-cookbooks/r-bioc-biobase'
-#cookbook 'r-bioc-cummerbund', path:'site-cookbooks/r-bioc-cummerbund'
+cookbook 'r-bioc-cummerbund', path:'site-cookbooks/r-bioc-cummerbund'
 cookbook 'runit', path:'site-cookbooks/runit'
 
 cookbook 'gbrowse', path:'site-cookbooks/gbrowse'

@@ -57,6 +57,9 @@
     "r-bioc-biobase": {
       "path": "./site-cookbooks/r-bioc-biobase"
     },
+    "r-bioc-cummerbund": {
+      "path": "./site-cookbooks/r-bioc-cummerbund"
+    },
     "runit": {
       "path": "./site-cookbooks/runit"
     },

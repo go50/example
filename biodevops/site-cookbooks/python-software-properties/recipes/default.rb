@@ -9,3 +9,7 @@
 package 'python-software-properties' do
   action :install
 end
+
+package 'software-properties-common' do
+  action :install
+end

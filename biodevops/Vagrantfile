@@ -138,7 +138,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "r-base"
     chef.add_recipe "r-base-dev"
     chef.add_recipe "r-bioc-biobase"
-    #chef.add_recipe "r-bioc-cummerbund"
+    chef.add_recipe "r-bioc-cummerbund"
     chef.add_recipe "runit"
 
     chef.add_recipe "gbrowse"
