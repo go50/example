@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "ubuntu-1204"
+  config.vm.box = "ubuntu1304_i386"
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
@@ -115,13 +115,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+  
+  config.vm.network :private_network, ip: "192.168.33.10"
+  config.proxy.http     = "http://user:password@rep.proxy.nic.fujitsu.com:8080/"
+  config.proxy.https    = "http://user:password@rep.proxy.nic.fujitsu.com:8080/"
+  config.proxy.no_proxy = "localhost,127.0.0.1,10.*"
 
   config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
+  
     chef.add_recipe "apt"
     chef.add_recipe "python-software-properties"
 
-    chef.add_recipe "ruby"
-    chef.add_recipe "rake"
+#    chef.add_recipe "ruby"
+#    chef.add_recipe "rake"
     chef.add_recipe "tex"
     chef.add_recipe "emacs"
     chef.add_recipe "jed"
@@ -134,7 +141,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "bedtools"
     chef.add_recipe "samtools"
 
-    chef.add_recipe "cufflinks"
+#    chef.add_recipe "cufflinks"
     chef.add_recipe "r-base"
     chef.add_recipe "r-base-dev"
     chef.add_recipe "r-bioc-biobase"
